@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column; /* 纵向布局 */
+    align-items: center; /* 居中对齐 */
+    height: 100vh; /* 使body高度占满整个视口 */
+    margin: 0; /* 去掉默认的margin */
+    background-color: #f0f0f0; /* 设置背景颜色 */
+}
+
+h1 {
+    margin: 20px 0; /* 设置标题的上下margin */
+}
+
+.container {
+    position: relative; /* 为绝对定位的子元素提供相对位置 */
+    width: 400px; /* 容器宽度 */
+    height: 400px; /* 容器高度 */
+    border: 2px solid #333; /* 容器边框样式 */
+    overflow: hidden; /* 隐藏容器外部的内容 */
+    background-color: #fff; /* 设置容器背景颜色 */
+}
+
+.ball {
+    position: absolute; /* 绝对定位，使其可以在容器内自由移动 */
+    border-radius: 50%; /* 使球为圆形 */
+}
